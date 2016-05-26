@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="24.00" TargetName="Test" TargetType="Controller" ContainsContext="false" Owner="Luke Cartwright, Hewlett-Packard Company" ExportDate="Thu May 26 10:48:12 2016" ExportOptions="DecoratedData ForceProtectedEncoding AllProjDocTrans">
-<Controller Use="Target" Name="Test" ProcessorType="1756-L73S" MajorRev="24" MinorRev="11" TimeSlice="20" ShareUnusedTimeSlice="1" ProjectCreationDate="Thu May 26 09:35:55 2016" LastModifiedDate="Thu May 26 10:48:02 2016" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent"
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="24.00" TargetName="Test" TargetType="Controller" ContainsContext="false" Owner="Luke Cartwright, Hewlett-Packard Company" ExportDate="Thu May 26 13:38:13 2016" ExportOptions="DecoratedData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Target" Name="Test" ProcessorType="1756-L73S" MajorRev="24" MinorRev="11" TimeSlice="20" ShareUnusedTimeSlice="1" ProjectCreationDate="Thu May 26 09:35:55 2016" LastModifiedDate="Thu May 26 13:19:36 2016" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent"
  SFCLastScan="DontScan" ProjectSN="16#0000_0000" MatchProjectToController="false" CanUseRPIFromProducer="false" InhibitAutomaticFirmwareUpdate="0" PassThroughConfiguration="EnabledWithAppend" DownloadProjectDocumentationAndExtendedProperties="true">
 <RedundancyInfo Enabled="false" KeepTestEditsOnSwitchOver="false" IOMemoryPadPercentage="90" DataTablePadPercentage="50"/>
 <Security Code="0" ChangesToDetect="16#ffff_ffff_ffff_ffff"/>
@@ -102,6 +102,12 @@
 <DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
 </Data>
 </Tag>
+<Tag Name="Onenrnr" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
+<Data>00</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
 <Tag Name="Three" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write">
 <Data>00 00 00 00</Data>
 <Data Format="Decorated">
@@ -120,7 +126,7 @@
 <RLLContent>
 <Rung Number="0" Type="N">
 <Text>
-<![CDATA[XIC(One)OTE(Two);]]>
+<![CDATA[XIC(Onenrnr)OTE(Two);]]>
 </Text>
 </Rung>
 <Rung Number="1" Type="N">
@@ -130,7 +136,7 @@
 </Rung>
 <Rung Number="2" Type="N">
 <Text>
-<![CDATA[AOI_Test(AOI);]]>
+<![CDATA[XIO(Two)OTE(Three.1);]]>
 </Text>
 </Rung>
 </RLLContent>
