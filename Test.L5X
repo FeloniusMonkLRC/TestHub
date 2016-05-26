@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="24.00" TargetName="Test" TargetType="Controller" ContainsContext="false" Owner="Luke Cartwright, Hewlett-Packard Company" ExportDate="Thu May 26 10:09:08 2016" ExportOptions="DecoratedData ForceProtectedEncoding AllProjDocTrans">
-<Controller Use="Target" Name="Test" ProcessorType="1756-L73S" MajorRev="24" MinorRev="11" TimeSlice="20" ShareUnusedTimeSlice="1" ProjectCreationDate="Thu May 26 09:35:55 2016" LastModifiedDate="Thu May 26 10:08:59 2016" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent"
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="24.00" TargetName="Test" TargetType="Controller" ContainsContext="false" Owner="Luke Cartwright, Hewlett-Packard Company" ExportDate="Thu May 26 10:48:12 2016" ExportOptions="DecoratedData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Target" Name="Test" ProcessorType="1756-L73S" MajorRev="24" MinorRev="11" TimeSlice="20" ShareUnusedTimeSlice="1" ProjectCreationDate="Thu May 26 09:35:55 2016" LastModifiedDate="Thu May 26 10:48:02 2016" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent"
  SFCLastScan="DontScan" ProjectSN="16#0000_0000" MatchProjectToController="false" CanUseRPIFromProducer="false" InhibitAutomaticFirmwareUpdate="0" PassThroughConfiguration="EnabledWithAppend" DownloadProjectDocumentationAndExtendedProperties="true">
 <RedundancyInfo Enabled="false" KeepTestEditsOnSwitchOver="false" IOMemoryPadPercentage="90" DataTablePadPercentage="50"/>
 <Security Code="0" ChangesToDetect="16#ffff_ffff_ffff_ffff"/>
@@ -25,7 +25,7 @@
 </Module>
 </Modules>
 <AddOnInstructionDefinitions>
-<AddOnInstructionDefinition Name="AOI_Test" Class="Standard" Revision="1.0" ExecutePrescan="false" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2016-05-26T00:06:01.239Z" CreatedBy="CREATURETECH\luke.cartwright" EditedDate="2016-05-26T00:08:12.387Z" EditedBy="CREATURETECH\luke.cartwright" SoftwareRevision="v24.00"
+<AddOnInstructionDefinition Name="AOI_Test" Class="Standard" Revision="1.0" ExecutePrescan="false" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2016-05-26T00:06:01.239Z" CreatedBy="CREATURETECH\luke.cartwright" EditedDate="2016-05-26T00:37:53.668Z" EditedBy="CREATURETECH\luke.cartwright" SoftwareRevision="v24.00"
 >
 <Parameters>
 <Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
@@ -59,7 +59,7 @@
 <![CDATA[If input THEN]]>
 </Line>
 <Line Number="1">
-<![CDATA[	//do something]]>
+<![CDATA[	Output := 1;]]>
 </Line>
 <Line Number="2">
 <![CDATA[ELSE]]>
